@@ -24,13 +24,13 @@ describe('calculateNumber type == SUM', function() {
 
 describe('calculateNumber type == SUBSTRACT', function() {
         it('calculateSUB', function() {
-                assert.equal(calculateNumber('SUBSTRACT', 1.4, 4.5), -4);
+                assert.equal(calculateNumber('SUBSTRACT', 4.5, 1.4), 4);
                 assert.equal(calculateNumber('SUBSTRACT', 1, 3.7), -3);
                 assert.equal(calculateNumber('SUBSTRACT', 1.2, 3.7), -3);
                 assert.equal(calculateNumber('SUBSTRACT', 1.5, 3.7), -2);
         });
         it("calculateNegativeNumber", function() {
-                assert.equal(calculateNumber('SUBSTRACT', -1, 4), -5);
+                assert.equal(calculateNumber('SUBSTRACT', 4, 1), 3);
                 assert.equal(calculateNumber('SUBSTRACT', 1, -3.7), 5);
                 assert.equal(calculateNumber('SUBSTRACT', -1.2, 3.7), -5);
                 assert.equal(calculateNumber('SUBSTRACT', 1.5, -3.7), 6);

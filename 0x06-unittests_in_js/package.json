@@ -10,8 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^4.2.0",
+    "chai": "^4.3.6",
+    "karma-sinon": "^1.0.5",
     "mocha": "^10.0.0",
-    "sinon": "^9.2.3"
+    "sinon": "^9.2.4"
   }
 }

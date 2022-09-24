@@ -1,4 +1,4 @@
-const calculateNumber = function calculateNumber(a, b, type) {
+const calculateNumber = function calculateNumber(type, a, b) {
 	if(type === "SUM"){
 		const sum = Math.round(b) + Math.round(a);
 		return sum;
@@ -6,12 +6,8 @@ const calculateNumber = function calculateNumber(a, b, type) {
 		const substract = Math.round(a) - Math.round(b);
 		return substract;
 	} else if(type === "DIVIDE")
-		const A = Math.round(a);
-	        const B = Math.round(b);
-	        if(B == 0){
-			return error;
-		} else
-		const divide = A / B;
+	        if(Math.round(b) === 0) return 'Error';
+	        const divide = Math.round(a) / Math.round(b)
 	        return divide;
 };
 
